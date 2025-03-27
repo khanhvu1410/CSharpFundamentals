@@ -45,17 +45,24 @@ class Program
             }
 
             Console.WriteLine();
+
+            var choice = GetValidChoice("Do you want to enter another car? (Y/N): ");
+            if (choice.Equals("N", StringComparison.OrdinalIgnoreCase))
+            {
+                break;
+            }
+            Console.WriteLine();
         }   
     }
 
     private static void RefuelOrChargeCar(Car car)
     {
-        var choice = GetValidRefuelChoice("Do you want to refuel/charge? (Y/N): ");
+        var choice = GetValidChoice("Do you want to refuel/charge? (Y/N): ");
         Console.WriteLine();
 
         if (choice.Equals("Y", StringComparison.OrdinalIgnoreCase))
         {
-            var refuelDate = GetValidDate("Enter refuel/charge date and time (yyyy-MM-dd HH:mm): ", car.Year, true);
+            var refuelDate = GetValidDate("Enter refuel/charge date and time (yyyy-MM-dd HH:mm): ", car.Year, "yyyy-MM-dd HH:mm");
             if (car is FuelCar fuelCar)
             {
                 fuelCar.Refuel(refuelDate);
@@ -94,18 +101,12 @@ class Program
     }
 
     // Method to validate date input
-    private static DateTime GetValidDate(string message, int year, bool isRefuelDate = false)
+    private static DateTime GetValidDate(string message, int year, string format = "yyyy-MM-dd")
     {
         DateTime result;
         Console.Write(message);
-        
-        string dateFormat = "yyyy-MM-dd";
-        if (isRefuelDate == true)
-        {
-            dateFormat = "yyyy-MM-dd HH:mm";
-        }
 
-        while (!DateTime.TryParseExact(Console.ReadLine(), dateFormat, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out result) || result.Year < year)
+        while (!DateTime.TryParseExact(Console.ReadLine(), format, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out result) || result.Year < year)
         {
             Console.WriteLine("Invalid date format! Please enter a valid date.");
             Console.Write(message);
@@ -128,7 +129,7 @@ class Program
     }
 
     // Method to validate refuel choice input
-    private static string GetValidRefuelChoice(string message)
+    private static string GetValidChoice(string message)
     {
         var choice = GetValidString(message);
         while (!choice.Equals("Y", StringComparison.OrdinalIgnoreCase)  && !choice.Equals("N", StringComparison.OrdinalIgnoreCase))
