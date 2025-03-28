@@ -48,7 +48,7 @@ public class CarService : ICarService
 
         if (filteredCars.Count == 0)
         {
-            throw new KeyNotFoundException("No cars found.");
+            throw new KeyNotFoundException($"No {model} cars found.");
         }
 
         return filteredCars;

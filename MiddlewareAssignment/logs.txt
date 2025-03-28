@@ -45,3 +45,10 @@ Path: /Cars/GetAllCars
 Query String: 
 Request Body: 
 
+[3/28/2025 3:19:45 PM] Request Details:
+Schema: http
+Host: localhost:5110
+Path: /Cars/FilterByModel
+Query String: ?model=test
+Request Body: 
+
