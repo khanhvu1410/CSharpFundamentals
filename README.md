@@ -35,12 +35,12 @@ cd AssignmentDay2
 ```sh
 cd MiddlewareAssignment
 ```
-Ensure that you provide a valid endpoint to process HTTP requests and generate logs in logs.txt.
-
-Example: http://localhost:5110/Cars/FilterByModel?model=Mustang
 
 ### Step 3: Run the application 
-Inside the respective folder, execute:
+- Inside the respective folder, execute:
 ```sh
 dotnet run
 ```
+- In Middleware Assignment:
+  - Ensure that you provide a valid endpoint to process HTTP requests and generate logs in logs.txt.
+  - Example: http://localhost:5110/Cars/FilterByModel?model=Mustang
