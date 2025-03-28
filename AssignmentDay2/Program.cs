@@ -15,35 +15,10 @@ class Program
             Console.WriteLine();
             var lastMaintenanceDate = GetValidDate("Enter last maintenance date (yyyy-MM-dd): ", year);
             var type = GetValidCarType("Is this a FuelCar or ElectricCar? (F/E): ");
-            Car car;
-
-            if (type == CarType.Fuel)
-            {
-                car = new FuelCar
-                {
-                    Make = make,
-                    Model = model,
-                    Year = year,
-                    Type = type,
-                    LastMaintenanceDate = lastMaintenanceDate
-                };
-                car.DisplayDetails();
-                RefuelOrChargeCar(car);
-            } 
-            else if (type == CarType.Electric)
-            {
-                car = new ElectricCar
-                {
-                    Make = make,
-                    Model = model,
-                    Year = year,
-                    Type = type,
-                    LastMaintenanceDate = lastMaintenanceDate
-                };
-                car.DisplayDetails();
-                RefuelOrChargeCar(car);
-            }
-
+            
+            Car car = CreateCar(make, model, year, type, lastMaintenanceDate);
+            car.DisplayDetails();
+            RefuelOrChargeCar(car);
             Console.WriteLine();
 
             var choice = GetValidChoice("Do you want to enter another car? (Y/N): ");
@@ -51,8 +26,35 @@ class Program
             {
                 break;
             }
-            Console.WriteLine();
+            Console.WriteLine();   
         }   
+    }
+
+    private static Car CreateCar(string make, string model, int year, CarType type, DateTime lastMaintenanceDate)
+    {
+        if (type == CarType.Fuel)
+        {
+            return new FuelCar
+            {
+                Make = make,
+                Model = model,
+                Year = year,
+                Type = type,
+                LastMaintenanceDate = lastMaintenanceDate
+            };
+            
+        } 
+        else
+        {
+            return new ElectricCar
+            {
+                Make = make,
+                Model = model,
+                Year = year,
+                Type = type,
+                LastMaintenanceDate = lastMaintenanceDate
+            };
+        }
     }
 
     private static void RefuelOrChargeCar(Car car)
