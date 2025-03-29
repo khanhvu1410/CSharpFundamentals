@@ -23,9 +23,7 @@ class Program
 
             var choice = GetValidChoice("Do you want to enter another car? (Y/N): ");
             if (choice.Equals("N", StringComparison.OrdinalIgnoreCase))
-            {
                 break;
-            }
             Console.WriteLine();   
         }   
     }
@@ -94,7 +92,8 @@ class Program
     {
         int result;
         Console.Write(message);
-        while (!int.TryParse(Console.ReadLine()?.Trim(), out result) || result < 1886 || result > DateTime.UtcNow.Year) 
+        while (!int.TryParse(Console.ReadLine()?.Trim(), out result) || 
+                result < 1886 || result > DateTime.UtcNow.Year) 
         {
             Console.WriteLine($"Invalid year! Please enter a valid year between 1886 and the current year.");
             Console.Write(message);
@@ -108,7 +107,8 @@ class Program
         DateTime result;
         Console.Write(message);
 
-        while (!DateTime.TryParseExact(Console.ReadLine(), format, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out result) || result.Year < year)
+        while (!DateTime.TryParseExact(Console.ReadLine(), format, CultureInfo.InvariantCulture, DateTimeStyles.AllowWhiteSpaces, out result) || 
+                result.Year < year)
         {
             Console.WriteLine("Invalid date format! Please enter a valid date.");
             Console.Write(message);
@@ -134,7 +134,8 @@ class Program
     private static string GetValidChoice(string message)
     {
         var choice = GetValidString(message);
-        while (!choice.Equals("Y", StringComparison.OrdinalIgnoreCase)  && !choice.Equals("N", StringComparison.OrdinalIgnoreCase))
+        while (!choice.Equals("Y", StringComparison.OrdinalIgnoreCase)  && 
+                !choice.Equals("N", StringComparison.OrdinalIgnoreCase))
         {
             Console.WriteLine("Invalid choice! Please enter 'Y' for Yes or 'N' for No.");
             choice = GetValidString(message);

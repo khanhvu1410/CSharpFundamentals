@@ -1,4 +1,4 @@
-using MiddlewareAssignment;
+using MiddlewareAssignment.Middleware;
 using MiddlewareAssignment.Services;
 
 var builder = WebApplication.CreateBuilder(args);

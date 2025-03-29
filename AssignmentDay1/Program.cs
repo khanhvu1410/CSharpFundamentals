@@ -24,7 +24,7 @@ class Program
                 6. Exit
             ");
 
-            int choice = GetValidInteger("Enter your choice: ");
+            int choice = GetValidChoice("Enter your choice: ");
 
             switch (choice) 
             {
@@ -135,15 +135,28 @@ class Program
         return result;
     }
 
+    public static int GetValidChoice(string message)
+    {
+        int result = GetValidInteger(message);
+        while (result < 1 || result > 6)
+        {
+            Console.WriteLine("Invalid input! Please enter a choice between 1 and 6.");
+            result = GetValidInteger(message);
+        }
+        return result;
+    }
+
     // Method to validate and parse CarType input
     public static CarType GetValidCarType(string message)
     {
-        CarType type;
-        Console.Write(message);
-        while (!Enum.TryParse(Console.ReadLine(), true, out type)) 
+        var typeInput = GetValidString(message);
+        while (!typeInput.Equals("Fuel", StringComparison.OrdinalIgnoreCase)  && 
+                !typeInput.Equals("Electric", StringComparison.OrdinalIgnoreCase))
         {
-            Console.Write($"Invalid input. {message}");
+            Console.WriteLine("Invalid input! Please enter 'Fuel' for FuelCar or 'Electric' for ElectricCar.");
+            typeInput = GetValidString(message);
         }
+        CarType type = typeInput.Equals("Fuel", StringComparison.OrdinalIgnoreCase) ? CarType.Fuel : CarType.Electric;
         return type;
     }
 }

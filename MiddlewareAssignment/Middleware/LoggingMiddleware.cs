@@ -2,7 +2,7 @@ using System.Text;
 using MiddlewareAssignment.Models;
 using MiddlewareAssignment.Services;
 
-namespace MiddlewareAssignment;
+namespace MiddlewareAssignment.Middleware;
 
 public class LoggingMiddleware
 {
