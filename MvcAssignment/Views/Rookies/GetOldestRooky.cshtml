@@ -1,0 +1,16 @@
+﻿@model Person
+@{
+    ViewData["Title"] = "Oldest Rooky";
+}
+
+<ul>
+    <li>First name: @Model.FirstName</li>
+    <li>Last name: @Model.LastName</li>
+    <li>Gender: @Model.Gender</li>
+    <li>Date of birth: @Model.DateOfBirth.ToString("dd/MM/yyyy")</li>
+    <li>Phone number: @Model.PhoneNumber</li>
+    <li>Birth place: @Model.BirthPlace</li>
+    <li>Is graduated: @(Model.IsGraduated == true ? "Yes" : "No")</li>
+</ul>
+
+
