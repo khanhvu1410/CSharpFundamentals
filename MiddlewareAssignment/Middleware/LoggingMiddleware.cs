@@ -18,22 +18,17 @@ public class LoggingMiddleware
 
     public async Task Invoke(HttpContext context)
     {
-        // Read request details
-        var schema = context.Request.Scheme;
-        var host = context.Request.Host.ToString();
-        var path = context.Request.Path;
-        var queryString = context.Request.QueryString.ToString();
-
         // Read request body
         context.Request.EnableBuffering();
         string requestBody = await ReadRequestBody(context);
 
+        var request = context.Request;
         var logging = new Logging
         {
-            Schema = schema,
-            Host = host,
-            Path = path,
-            QueryString = queryString,
+            Schema = request.Scheme,
+            Host = request.Host.ToString(),
+            Path = request.Path,
+            QueryString = request.QueryString.ToString(),
             RequestBody = requestBody
         };
 

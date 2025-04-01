@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "E:\\nashtech\\R2ENetAssignments\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{049FF879-2645-489F-A50A-E41C1A84BF25}|MvcAssignment\\MvcAssignment.csproj|e:\\nashtech\\r2enetassignments\\mvcassignment\\data\\rookiesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{049FF879-2645-489F-A50A-E41C1A84BF25}|MvcAssignment\\MvcAssignment.csproj|solutionrelative:mvcassignment\\data\\rookiesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90732F62-11A8-40AC-909A-E0937438EC66}|MiddlewareAssignment\\MiddlewareAssignment.csproj|e:\\nashtech\\r2enetassignments\\middlewareassignment\\middleware\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90732F62-11A8-40AC-909A-E0937438EC66}|MiddlewareAssignment\\MiddlewareAssignment.csproj|solutionrelative:middlewareassignment\\middleware\\loggingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{049FF879-2645-489F-A50A-E41C1A84BF25}|MvcAssignment\\MvcAssignment.csproj|e:\\nashtech\\r2enetassignments\\mvcassignment\\controllers\\rookiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{049FF879-2645-489F-A50A-E41C1A84BF25}|MvcAssignment\\MvcAssignment.csproj|solutionrelative:mvcassignment\\controllers\\rookiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{049FF879-2645-489F-A50A-E41C1A84BF25}|MvcAssignment\\MvcAssignment.csproj|e:\\nashtech\\r2enetassignments\\mvcassignment\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{049FF879-2645-489F-A50A-E41C1A84BF25}|MvcAssignment\\MvcAssignment.csproj|solutionrelative:mvcassignment\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{049FF879-2645-489F-A50A-E41C1A84BF25}|MvcAssignment\\MvcAssignment.csproj|e:\\nashtech\\r2enetassignments\\mvcassignment\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{049FF879-2645-489F-A50A-E41C1A84BF25}|MvcAssignment\\MvcAssignment.csproj|solutionrelative:mvcassignment\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90732F62-11A8-40AC-909A-E0937438EC66}|MiddlewareAssignment\\MiddlewareAssignment.csproj|e:\\nashtech\\r2enetassignments\\middlewareassignment\\services\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90732F62-11A8-40AC-909A-E0937438EC66}|MiddlewareAssignment\\MiddlewareAssignment.csproj|solutionrelative:middlewareassignment\\services\\loggingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RookiesDbContext.cs",
-              "DocumentMoniker": "E:\\nashtech\\R2ENetAssignments\\MvcAssignment\\Data\\RookiesDbContext.cs",
-              "RelativeDocumentMoniker": "MvcAssignment\\Data\\RookiesDbContext.cs",
-              "ToolTip": "E:\\nashtech\\R2ENetAssignments\\MvcAssignment\\Data\\RookiesDbContext.cs",
-              "RelativeToolTip": "MvcAssignment\\Data\\RookiesDbContext.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAmwEwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:32:02.084Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\nashtech\\R2ENetAssignments\\MvcAssignment\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MvcAssignment\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\nashtech\\R2ENetAssignments\\MvcAssignment\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MvcAssignment\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAACbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:17:13.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RookiesController.cs",
-              "DocumentMoniker": "E:\\nashtech\\R2ENetAssignments\\MvcAssignment\\Controllers\\RookiesController.cs",
-              "RelativeDocumentMoniker": "MvcAssignment\\Controllers\\RookiesController.cs",
-              "ToolTip": "E:\\nashtech\\R2ENetAssignments\\MvcAssignment\\Controllers\\RookiesController.cs",
-              "RelativeToolTip": "MvcAssignment\\Controllers\\RookiesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAA5AAAAAAAAAA==",
+              "Title": "LoggingService.cs",
+              "DocumentMoniker": "E:\\nashtech\\R2ENetAssignments\\MiddlewareAssignment\\Services\\LoggingService.cs",
+              "RelativeDocumentMoniker": "MiddlewareAssignment\\Services\\LoggingService.cs",
+              "ToolTip": "E:\\nashtech\\R2ENetAssignments\\MiddlewareAssignment\\Services\\LoggingService.cs",
+              "RelativeToolTip": "MiddlewareAssignment\\Services\\LoggingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:16:20.778Z",
+              "WhenOpened": "2025-04-01T15:30:54.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Person.cs",
-              "DocumentMoniker": "E:\\nashtech\\R2ENetAssignments\\MvcAssignment\\Models\\Person.cs",
-              "RelativeDocumentMoniker": "MvcAssignment\\Models\\Person.cs",
-              "ToolTip": "E:\\nashtech\\R2ENetAssignments\\MvcAssignment\\Models\\Person.cs",
-              "RelativeToolTip": "MvcAssignment\\Models\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "LoggingMiddleware.cs",
+              "DocumentMoniker": "E:\\nashtech\\R2ENetAssignments\\MiddlewareAssignment\\Middleware\\LoggingMiddleware.cs",
+              "RelativeDocumentMoniker": "MiddlewareAssignment\\Middleware\\LoggingMiddleware.cs",
+              "ToolTip": "E:\\nashtech\\R2ENetAssignments\\MiddlewareAssignment\\Middleware\\LoggingMiddleware.cs",
+              "RelativeToolTip": "MiddlewareAssignment\\Middleware\\LoggingMiddleware.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:12:00.657Z",
+              "WhenOpened": "2025-04-01T15:30:13.584Z",
               "EditorCaption": ""
             }
           ]

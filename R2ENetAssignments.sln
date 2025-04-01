@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssignmentDay2", "Assignmen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddlewareAssignment", "MiddlewareAssignment\MiddlewareAssignment.csproj", "{90732F62-11A8-40AC-909A-E0937438EC66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAssignment", "MvcAssignment\MvcAssignment.csproj", "{049FF879-2645-489F-A50A-E41C1A84BF25}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
